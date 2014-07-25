@@ -52,15 +52,6 @@ endef
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/apk/Bluetooth.bplus.apk:system/app/Bluetooth.bplus.apk \
 	$(LOCAL_PATH)/apk/WifiDisplay.apk:system/app/WifiDisplay.apk
-	
-
-
-########################################################
-# Google applications
-########################################################
-ifeq ($(strip $(BUILD_WITH_GOOGLE_MARKET)),true)
-include device/rockchip/common/app/googleapp.mk
-endif
 
 ###########################################################
 ## Find all of the kl files under the named directories.
