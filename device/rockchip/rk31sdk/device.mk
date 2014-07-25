@@ -45,8 +45,6 @@ endef
 #########################################################
 # Copy proprietary apk
 #########################################################
-include device/rockchip/common/app/rkapk.mk
-
 #COPY_APK_TARGET := $(call all-apk-files-under,apk)
 #PRODUCT_COPY_FILES += $(foreach apkName, $(COPY_APK_TARGET), \
 #	$(addprefix $(LOCAL_PATH)/apk/, $(apkName)):$(addprefix system/app/, $(apkName)))
