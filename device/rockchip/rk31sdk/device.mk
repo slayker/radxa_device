@@ -50,7 +50,6 @@ endef
 #	$(addprefix $(LOCAL_PATH)/apk/, $(apkName)):$(addprefix system/app/, $(apkName)))
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/apk/Music.apk:system/app/Music.apk \
 	$(LOCAL_PATH)/apk/Bluetooth.bplus.apk:system/app/Bluetooth.bplus.apk \
 	$(LOCAL_PATH)/apk/WifiDisplay.apk:system/app/WifiDisplay.apk
 	
