@@ -140,6 +140,11 @@ PRODUCT_PACKAGES += \
     Camera \
     akmd 
 
+# Amazon	
+PRODUCT_PACKAGES += \
+	 AmazonApps \
+	 liblatency.so
+
 # charge
 PRODUCT_PACKAGES += \
     charger \
