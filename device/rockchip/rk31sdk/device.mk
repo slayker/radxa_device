@@ -143,7 +143,22 @@ PRODUCT_PACKAGES += \
 # Amazon	
 PRODUCT_PACKAGES += \
 	 AmazonApps \
-	 liblatency.so
+	 liblatency.so \
+	 amazon \
+	 libA9FlowEngine.so \
+	 amazon_kindle \
+	 libAAX_SDK.so \
+	 libNativeLibraryWrapper.so \
+	 amazon_mp3 \
+	 libaudio_gb.so \
+	 libaudio_hc.so \
+	 libaudio_ics.so \
+	 libaudio_jb.so \
+	 libaudio_jb2.so \
+	 libaudio_kk.so \
+	 libprhlpr.so \
+	 audible \
+	 imdb
 
 # charge
 PRODUCT_PACKAGES += \
