@@ -146,19 +146,19 @@ PRODUCT_PACKAGES += \
 	 liblatency.so \
 	 amazon \
 	 libA9FlowEngine.so \
-	 amazon_kindle \
-	 libAAX_SDK.so \
-	 libNativeLibraryWrapper.so \
-	 amazon_mp3 \
-	 libaudio_gb.so \
-	 libaudio_hc.so \
-	 libaudio_ics.so \
-	 libaudio_jb.so \
-	 libaudio_jb2.so \
-	 libaudio_kk.so \
-	 libprhlpr.so \
 	 audible \
 	 imdb
+	 
+# Amazon libs
+PRODUCT_COPY_FILES += \
+	packages/amazon/amazon_kindle/libs/libAAX_SDK.so:system/lib/libAAX_SDK.so
+	packages/amazon/amazon_kindle/libs/libNativeLibraryWrapper.so:system/lib/libNativeLibraryWrapper.so
+	packages/amazon/amazon_mp3/libs/libaudio_gb.so:system/lib/libaudio_gb.so
+	packages/amazon/amazon_mp3/libs/libaudio_hc.so:system/lib/libaudio_hc.so
+	packages/amazon/amazon_mp3/libs/libaudio_ics.so:system/lib/libaudio_ics.so
+	packages/amazon/amazon_mp3/libs/libaudio_jb2.so:system/lib/libaudio_jb2.so
+	packages/amazon/amazon_mp3/libs/libaudio_kk.so:system/lib/libaudio_kk.so
+	packages/amazon/amazon_mp3/libs/libprhlpr.so:system/lib/libprhlpr.so
 
 # charge
 PRODUCT_PACKAGES += \
