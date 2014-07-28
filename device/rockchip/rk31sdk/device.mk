@@ -151,7 +151,14 @@ PRODUCT_PACKAGES += \
 	 amazon_kindle \
 	 libAAX_SDK.so \
 	 libNativeLibraryWrapper.so \
-	 amazon_mp3
+	 amazon_mp3 \
+	 libaudio_gb.so \
+	 libaudio_hc.so \
+   	libaudio_ics.so \
+	libaudio_jb.so \
+	libaudio_jb2.so \
+	libaudio_kk.so \
+	libprhlpr.so
 
 # charge
 PRODUCT_PACKAGES += \
