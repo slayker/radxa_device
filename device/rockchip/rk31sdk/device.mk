@@ -141,7 +141,7 @@ PRODUCT_PACKAGES += \
     akmd 
 
 # Google
-$(call inherit-product, packages/google/products/gms.mk)
+$(call inherit-product, vendor/google/products/gms.mk)
 
 # charge
 PRODUCT_PACKAGES += \
