@@ -178,18 +178,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 			Apollo \
-			BluetoothExt \
 			Browser \
 			CMAccount \
 			CMFileManager \
 			CMUpdater \
 			CMWallpapers \
 			AlarmClock \
-			LockClock \
-			Torch \
 			Trebuchet \
-			VideoEditor \
-			VoicePlus 
+
 			
 
 ######################################
