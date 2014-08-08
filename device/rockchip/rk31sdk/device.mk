@@ -140,9 +140,6 @@ PRODUCT_PACKAGES += \
     Camera \
     akmd 
 
-# Google
-$(call inherit-product, vendor/google/products/gms.mk)
-
 # charge
 PRODUCT_PACKAGES += \
     charger \
@@ -177,7 +174,23 @@ PRODUCT_PACKAGES += \
     alsa.default \
     acoustics.default
 
+######################################
 
+PRODUCT_PACKAGES += \
+			Apollo \
+			BluetoothExt \
+			Browser \
+			CMAccount \
+			CMFileManager \
+			CMUpdater \
+			CMWallpapers \
+			AlarmClock \
+			LockClock \
+			Torch \
+			Trebuchet \
+			VideoEditor \
+			VoicePlus 
+			
 
 ######################################
 # 	phonepad codec list
