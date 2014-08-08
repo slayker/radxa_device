@@ -177,14 +177,7 @@ PRODUCT_PACKAGES += \
 ######################################
 
 PRODUCT_PACKAGES += \
-			Apollo \
-			Browser \
-			CMAccount \
-			CMFileManager \
-			CMUpdater \
-			CMWallpapers \
-			AlarmClock \
-			Trebuchet \
+			Trebuchet 
 
 			
 
