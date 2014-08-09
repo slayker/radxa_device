@@ -175,11 +175,16 @@ PRODUCT_PACKAGES += \
     acoustics.default
 
 ######################################
+# 	Adding Xanh apps
+######################################
 
 PRODUCT_PACKAGES += \
-			Trebuchet 
-
-			
+	anydo \
+	boomerang \
+	dolphin \
+	es \
+	slideme \
+	spotify
 
 ######################################
 # 	phonepad codec list
