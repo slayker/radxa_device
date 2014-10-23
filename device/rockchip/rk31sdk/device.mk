@@ -178,13 +178,6 @@ PRODUCT_PACKAGES += \
 # 	Adding Xanh apps
 ######################################
 
-PRODUCT_PACKAGES += \
-	anydo \
-	boomerang \
-	dolphin \
-	es \
-	slideme \
-	spotify
 
 ######################################
 # 	phonepad codec list
