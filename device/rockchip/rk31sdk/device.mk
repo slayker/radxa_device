@@ -140,6 +140,10 @@ PRODUCT_PACKAGES += \
     Camera \
     akmd 
 
+	
+# Google
+$(call inherit-product, vendor/google/products/gms.mk)	
+	
 # charge
 PRODUCT_PACKAGES += \
     charger \
