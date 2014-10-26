@@ -45,36 +45,13 @@ endef
 #########################################################
 # Copy proprietary apk
 #########################################################
-include device/rockchip/common/app/rkapk.mk
-
 #COPY_APK_TARGET := $(call all-apk-files-under,apk)
 #PRODUCT_COPY_FILES += $(foreach apkName, $(COPY_APK_TARGET), \
 #	$(addprefix $(LOCAL_PATH)/apk/, $(apkName)):$(addprefix system/app/, $(apkName)))
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/apk/Music.apk:system/app/Music.apk \
-	$(LOCAL_PATH)/apk/RKGameControlSettingV1.0.1.apk:system/app/RKGameControlSettingV1.0.1.apk \
 	$(LOCAL_PATH)/apk/Bluetooth.bplus.apk:system/app/Bluetooth.bplus.apk \
-	$(LOCAL_PATH)/apk/RkVideoPlayer.apk:system/app/RkVideoPlayer.apk \
 	$(LOCAL_PATH)/apk/WifiDisplay.apk:system/app/WifiDisplay.apk
-	
-
-
-########################################################
-# Google applications
-########################################################
-ifeq ($(strip $(BUILD_WITH_GOOGLE_MARKET)),true)
-include device/rockchip/common/app/googleapp.mk
-endif
-
-########################################################
-# Face lock
-########################################################
-ifeq ($(strip $(BUILD_WITH_FACELOCK)),true)
-include device/rockchip/common/app/facelock.mk
-endif
-
-
 
 ###########################################################
 ## Find all of the kl files under the named directories.
@@ -137,17 +114,11 @@ include device/rockchip/common/wifi/rk30_wifi.mk
 ifeq ($(strip $(BOARD_HAVE_BLUETOOTH)),true)
     include device/rockchip/common/bluetooth/rk30_bt.mk
 endif
-include device/rockchip/common/app/rkupdateservice.mk
-include device/rockchip/common/app/chrome.mk
 include device/rockchip/common/etc/adblock.mk
 include device/rockchip/common/phone/rk30_phone.mk
 include device/rockchip/common/features/rk-core.mk
 include device/rockchip/common/features/rk-camera.mk
 include device/rockchip/common/features/rk-camera-front.mk
-
-ifeq ($(strip $(BUILD_WITH_RK_EBOOK)),true)
-include device/rockchip/common/app/rkbook.mk
-endif
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
@@ -169,6 +140,10 @@ PRODUCT_PACKAGES += \
     Camera \
     akmd 
 
+	
+# Google
+$(call inherit-product, vendor/google/products/gms.mk)	
+	
 # charge
 PRODUCT_PACKAGES += \
     charger \
@@ -203,6 +178,9 @@ PRODUCT_PACKAGES += \
     alsa.default \
     acoustics.default
 
+######################################
+# 	Adding Xanh apps
+######################################
 
 
 ######################################

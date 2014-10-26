@@ -18,7 +18,7 @@
 #dev_mount sdcard /mnt/sdcard auto /devices/platform/goldfish_mmc.0 /devices/platform/msm_sdcc.2/mmc_host/mmc1
 #dev_mount flash /mnt/sdcard auto /devices/virtual/mtd/mtd9/mtdblock9
 # $_rbox_$_modify_$_huangyonglin: added 2012-02-23, for adding the mass storage supporting.
-dev_mount flash /mnt/sdcard auto /devices/virtual/mtd/mtd8/mtdblock8
+dev_mount flash /mnt/sdcard auto /devices/virtual/mtd/mtd9/mtdblock9
 dev_mount sdcard /mnt/external_sd auto /devices/platform/rk29_sdmmc.0/mmc_host/mmc0
 dev_mount udisk0 /mnt/usb_storage/USB_DISK0 1 /devices/platform/usb
 dev_mount udisk1 /mnt/usb_storage/USB_DISK1 1 /devices/platform/usb

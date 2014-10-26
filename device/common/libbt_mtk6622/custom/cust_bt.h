@@ -51,7 +51,7 @@
 /* UART Flow Control */
 #define CUST_BT_FLOW_CTL    0         // 0: software flow; 1: hardware flow
 /* Low Power Mode */
-#define ENABLE_LPM          0         // 0: disable LPM; 1: enable LPM
+#define ENABLE_LPM          1         // 0: disable LPM; 1: enable LPM
 /* BT Addr Generate */
 #define BT_ADDR_GENERATE_METHOD  1    // 0: random; 1: form flash; 2: from wifi mac plus one
 #endif
