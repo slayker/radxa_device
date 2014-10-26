@@ -46,9 +46,18 @@ LOCAL_PREBUILT_LIBS := libvpu.so
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_MULTI_PREBUILT)
 
+#FFMPEG Lib
 include $(CLEAR_VARS)
 
-LOCAL_PREBUILT_LIBS := librk_on2.so
+LOCAL_PREBUILT_LIBS := libffmpegvpu.so
+
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+
+LOCAL_PREBUILT_LIBS := libffmpeg_on2.so
 
 LOCAL_MODULE_TAGS := optional
 
@@ -69,10 +78,12 @@ LOCAL_PREBUILT_LIBS := libffmpeg.so
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_MULTI_PREBUILT)
+
 include $(CLEAR_VARS)
 LOCAL_PREBUILT_LIBS := libhevcdec.so
 
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_MULTI_PREBUILT)
+
 endif

@@ -32,9 +32,9 @@ RECOVERY_BOARD_ID ?= false
 TARGET_CPU_SMP ?= true
 BOARD_USES_GENERIC_AUDIO ?= true
 
-//MAX-SIZE=768M, for generate out/.../system.img
-BOARD_SYSTEMIMAGE_PARTITION_SIZE ?= 805306368
-BOARD_FLASH_BLOCK_SIZE ?= 196608
+//MAX-SIZE=512M, for generate out/.../system.img
+BOARD_SYSTEMIMAGE_PARTITION_SIZE ?= 536870912
+BOARD_FLASH_BLOCK_SIZE ?= 131072
 
 include device/rockchip/rk31sdk/wifi_bt.mk
 
