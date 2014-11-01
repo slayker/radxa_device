@@ -29,6 +29,12 @@ include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
 PRODUCT_PACKAGES += Email
 
+###############
+##
+## Adding OTA client
+
+PRODUCT_PACKAGES += otaclient
+
 
 ###########################################################
 ## Find all of the apk files under the named directories.
@@ -50,8 +56,7 @@ endef
 #	$(addprefix $(LOCAL_PATH)/apk/, $(apkName)):$(addprefix system/app/, $(apkName)))
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/apk/Bluetooth.bplus.apk:system/app/Bluetooth.bplus.apk \
-	$(LOCAL_PATH)/apk/WifiDisplay.apk:system/app/WifiDisplay.apk
+	$(LOCAL_PATH)/apk/Bluetooth.bplus.apk:system/app/Bluetooth.bplus.apk
 
 ###########################################################
 ## Find all of the kl files under the named directories.
@@ -178,9 +183,6 @@ PRODUCT_PACKAGES += \
     alsa.default \
     acoustics.default
 
-######################################
-# 	Adding Xanh apps
-######################################
 
 
 ######################################
